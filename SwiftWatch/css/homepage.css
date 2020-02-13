@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #141414;
+}
+
+ul{
+    list-style:none;
+}
+
+h1,h2,h3,h4{
+    color: white;
+}
+
+
+a{
+    color: white;
+}
+
+p{
+    margin: 0.5rem 0;
+}
+
+img{
+    width: 100%;
+}
+
+
+.showCase{
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    background: url('../images/showcase-img.jpg') no-repeat center center/cover;
+}
+
+.showCase::after{
+    content:'';
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.6);
+    box-shadow: inset 120px 100px 250px #000000
+}
+
+.showCase-top{
+    position: relative;
+    height: 90px;
+}
+
+
+.showCase-top img{
+    width: 120px;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    
+}
+
+
+
+.showCase-top a{
+    position: absolute;
+    top: 40%;
+    right:0;
+    transform: translate(-50%,-50%);
+    background: #002A32;
+    padding: 8px ;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    color:#00D6D6;
+    z-index: 2;
+}
+
+.showCase-top a:hover{
+    color:#34495e;
+}
+
+
+
+.showCase-content{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 2;
+
+}
+
+.showCase-content h1{
+    font-family: sans-serif;
+}
+
+.showCase-content a{
+
+    background: #002A32;
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    width: 95%;
+    border-radius: 30px;
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #00D6D6;
+    
+}
+
+
+.showCase-content a:hover{
+    color: #34495e;
+    opacity: 0.8;
+    
+}
+
+
+
+
+                                     /*watch on any device prop*/
+.middle{
+    width:100%;
+    height: 50vh;
+    position: relative;
+}
+
+
+.middle-text p{
+    color: white;
+    position: absolute;
+    left: 8%;
+    top: 50%;
+    font-size:2em;
+
+}
+
+.middle-text img{
+    width: 400px;
+    position: absolute;
+    left: 60%;
+    top: 40px;
+}
+
+
+
+                                   /*the purchase prop*/
+.middle2{
+    width:100%;
+    height: 50vh;
+    position: relative;
+}
+
+.middle-text2 p{
+    color: white;
+    position: absolute;
+    margin: 10px;
+    top: 50%;
+    font-size:2em;
+    float: left;
+    
+    
+}
+
+.middle-text2 img{
+    width: 400px;
+    position: absolute;
+    left: 70%;
+    top: 90px;
+    border-radius: 20px;
+    
+   
+}
+
+.middle-text2 i{
+    position: absolute;
+    top: 80%;
+    font-size: 50px;
+    left:30%;
+    color: #f39c12;
+
+}
+
+
+.contacts{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    display: inline;
+}
+
+.contacts p{
+    color: #00D6D6;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    font-style: italic;
+    padding: 10px;
+}
+
+.contacts i{
+    color: black;
+    margin-right: 5px;
+    font-size: 1.6em;
+}
+
+
+
+                                          /*Responsive showcase for the  plus iphones*/
+
+@media only screen and (max-width: 414px) {
+    .showCase-content a{
+    background: #f39c12;
+    padding: 20px;
+    position: absolute;
+    top: 150px;
+    width: 95%;
+    border-radius: 30px;
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: uppercase;
+    
+    }}
+
+
+                                      /*Responsive watch anywhere prop for the  plus iphones*/
+@media only screen and (max-width: 414px){
+    .middle{
+        width: 100%;
+        height: 60vh;
+    }
+
+    .middle-text p{
+        color: white;
+        position: absolute;
+        left: 8%;
+        top: 4%;
+        font-size:2em;
+        text-align: center;
+    }
+
+
+    .middle-text img{
+        width: 400px;
+        position: absolute;
+        left: 4%;
+        top: 120px;
+    }
+ }
+
+
+                                    /*Responsive purchase prop for the  plus iphones*/
+
+ @media only screen and (max-width: 414px){
+    .middle2{
+        width:100%;
+        height: 60vh;
+        position: relative;
+    }
+    
+    .middle-text2 p{
+        color: white;
+        position: absolute;
+        margin: 10px;
+        top: 4%;
+        font-size:2em;
+        float: left;
+        text-align: center;
+            
+    }
+
+    .middle-text2 img{
+        width: 370px;
+        position: absolute;
+        left: 5%;
+        top: 190px;
+        border-radius: 20px;
+         
+    }
+
+    .middle-text2 i{
+        position: absolute;
+        top: 32%;
+        font-size: 40px;
+        left:43%;
+        color: #f39c12;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+

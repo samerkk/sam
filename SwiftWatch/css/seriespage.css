@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+}
+
+
+.VidPlayer{
+    position: relative;
+    top: 20px;
+    left: 300px;
+    border-radius: 15px;
+    outline: none;
+    box-shadow:#2c3e50 10px 10px 10px;
+}
+
+
+
+.episodes li{
+    display: inline;
+    position: relative;
+    top: 150px;
+   
+    
+    
+}
+
+
+.episodes li a{
+    color: #00D6D6;
+    border: solid #00D6D6 1.5px;
+    border-radius: 10px;
+    font-size: 2em;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+   
+}
+
+.episodes li a:hover{
+    color: #8e44ad;
+    border: solid #8e44ad 1.5px;
+}
+

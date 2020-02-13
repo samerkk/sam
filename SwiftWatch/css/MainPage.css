@@ -1,0 +1,214 @@
+body{
+    background-color: black;
+    
+}
+
+
+
+                          /*header*/
+.vid1{
+    position: relative;
+    top: 90px;
+    left: 20px;
+    outline: 0;
+    box-shadow:#2c3e50 10px 10px 10px;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.vid2{
+    position: relative;
+    top: 70px;
+    left: 280px;
+    outline: 0;
+    box-shadow:#2c3e50 10px 10px 10px;
+    border-radius: 15px;
+    z-index: 0;
+
+}
+
+.p1{
+    font-size: 2.7em;
+    color: #00D6D6;
+    font-style: italic;
+    position: absolute;
+    left: 60%;
+    top: 30%;
+    width: 400px;
+   
+}
+
+
+                              /*movies*/
+.thumbnails a{
+    width: 195px;
+    height: 40vh;
+    background-color: #f39c12;
+    margin: 5px;
+    position: relative;
+    top: 20px;
+    left: 30px;;
+    display: inline-block;
+    transition: 2s;
+    
+}
+
+.thumbnails a:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+.thumb img{
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 10px;
+    
+    
+}
+                      
+                                 /*slider css*/
+
+.slider{
+    position: relative;
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow:#2c3e50 10px 10px 10px;
+
+}
+
+.slides{
+    width: 2400px;
+    display: flex;
+}
+
+.slide{
+    width: 600px;
+    transition: 0.6s;
+}
+
+.btnLeft, .btnRight{
+    position: absolute;
+    width: 80px;
+    height: 500px;
+    top: 0;
+    font-size: 50px;
+    line-height: 500px  !important;
+    text-align: center;
+    cursor: pointer;
+    color: yellow;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.btnLeft:hover, .btnRight:hover{
+    background: #000000b3;
+    opacity: 1;
+}
+
+.btnLeft{
+    left: 0;
+
+}
+
+.btnRight{
+    right: 0;
+}
+
+
+.slide img{
+    width: 600px;
+    height: 500px;
+    
+}
+
+
+.UR{
+    position: relative;
+    color: #00D6D6;
+    font-size: 2.5em;
+   
+    font-style: italic;
+    
+}
+
+                         /*footer*/
+
+.contacts{
+    position: relative;
+    top: 10px;
+    
+    display: inline;
+}
+
+.contacts p{
+    color: #00D6D6;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    font-style: italic;
+    padding: 10px;
+}
+
+.contacts i{
+    color: black;
+    margin-right: 5px;
+    font-size: 1.6em;
+}
+
+
+                 /*scrollup*/
+
+#btnScrollToTop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #002A32;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 25);
+    color: #00D6D6;
+    outline: none;
+    cursor: pointer;
+}  
+
+#btnScrollToTop:active{
+    background: yellow;
+} 
+
+
+                                      /*responsiveness for the video player*/
+@media screen and (max-width: 1024px) {
+    .thumbnails a{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1200px) {
+    .p1{
+        display: none;
+        
+    }
+
+    .vid1{
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1000px){
+    .vid1{
+        width: 800px;
+    }
+}
+
+@media (max-width: 800px){
+    .vid1{
+        width: 600px;
+    }
+}
+
+
